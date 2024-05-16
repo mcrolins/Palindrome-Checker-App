@@ -19,7 +19,8 @@ function checkPalindrome() {
     }
 }
 
-function isInputEpmty () {
+function isInputEpmty (event) {
+    event.preventDefault();
   if(inputText.value === "") {
     alert("Please input a value")
   } else {
